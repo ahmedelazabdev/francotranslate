@@ -51,37 +51,38 @@
 
     <style>
         :root {
-            --primary: #2563eb;
-            --primary-dark: #1d4ed8;
+            --primary: #1d4ed8;
+            --primary-dark: #1e40af;
             --bg-page: #f8fafc;
             --surface: #ffffff;
-            --border: #e2e8f0;
+            --border: #cbd5e1;
             --text-title: #0f172a;
-            --text-body: #334155;
-            --text-muted: #64748b;
-            --card-badge: #eff6ff;
+            --text-body: #1e293b;
+            --text-muted: #475569;
+            --card-badge: #dbeafe;
+            --card-badge-text: #1e40af;
             --radius-lg: 16px;
             --radius-md: 10px;
             --shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
         }
 
         [data-theme="dark"] {
-            --primary: #3b82f6;
-            --primary-dark: #60a5fa;
+            --primary: #60a5fa;
+            --primary-dark: #93c5fd;
             --bg-page: #0f172a;
             --surface: #1e293b;
-            --border: #334155;
+            --border: #475569;
             --text-title: #f8fafc;
-            --text-body: #cbd5e1;
-            --text-muted: #94a3b8;
+            --text-body: #e2e8f0;
+            --text-muted: #cbd5e1;
             --card-badge: #1e3a8a;
+            --card-badge-text: #bfdbfe;
             --shadow: 0 10px 25px -5px rgba(0,0,0,0.5);
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Cairo", sans-serif; }
         body { background: var(--bg-page); color: var(--text-body); line-height: 1.85; min-height: 100vh; display: flex; flex-direction: column; transition: background 0.3s, color 0.3s; }
         
-        /* Header */
         header { background: var(--surface); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px); }
         .nav-wrap { max-width: 1100px; margin: 0 auto; padding: 0.85rem 1.25rem; display: flex; justify-content: space-between; align-items: center; }
         .brand { font-size: 1.35rem; font-weight: 800; color: var(--primary); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; }
@@ -98,7 +99,7 @@
         .breadcrumb a { color: var(--primary); text-decoration: none; }
 
         .page-header { margin-bottom: 2.5rem; text-align: center; }
-        .page-header .badge { display: inline-block; background: var(--card-badge); color: var(--primary); padding: 0.35rem 1.1rem; border-radius: 20px; font-weight: 700; font-size: 0.85rem; margin-bottom: 0.8rem; }
+        .page-header .badge { display: inline-block; background: var(--card-badge); color: var(--card-badge-text); padding: 0.35rem 1.1rem; border-radius: 20px; font-weight: 700; font-size: 0.85rem; margin-bottom: 0.8rem; }
         .page-header h1 { font-size: 2.3rem; font-weight: 800; color: var(--text-title); margin-bottom: 0.8rem; }
         .page-header p { color: var(--text-muted); font-size: 1.1rem; max-width: 700px; margin: 0 auto; }
 
@@ -106,7 +107,6 @@
         .content-card h2 { font-size: 1.5rem; color: var(--text-title); margin-bottom: 1rem; border-right: 4px solid var(--primary); padding-right: 0.8rem; }
         .content-card p { margin-bottom: 1.2rem; font-size: 1.02rem; text-align: justify; }
 
-        /* Feature Grid */
         .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
         .feature-item { background: var(--bg-page); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; text-align: right; }
         .feature-icon { font-size: 2rem; margin-bottom: 0.8rem; display: inline-block; }
@@ -130,13 +130,13 @@
 
     <header>
         <div class="nav-wrap">
-            <a href="index.html" class="brand">
+            <a href="/" class="brand">
                 <svg viewBox="0 0 24 24"><path d="M12.87 15.07l-2.54-2.51.03-.08c1.74-1.94 2.98-4.17 3.71-6.49H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>
                 <span>ترجمة فرانكو</span>
             </a>
             <div class="nav-actions">
                 <ul class="nav-links">
-                    <li><a href="index.html">المترجم الفوري</a></li>
+                    <li><a href="/">المترجم الفوري</a></li>
                     <li><a href="about.html" class="active">عن الموقع</a></li>
                     <li><a href="privacy.html">الخصوصية</a></li>
                 </ul>
@@ -147,7 +147,7 @@
 
     <main>
         <div class="breadcrumb">
-            <a href="index.html">الرئيسية</a>
+            <a href="/">الرئيسية</a>
             <span>/</span>
             <span>عن الموقع</span>
         </div>
@@ -211,21 +211,21 @@
                 يسعدنا دائماً تلقي ملاحظاتكم واقتراحاتكم لتطوير الأداة، أو الإبلاغ عن أي مصطلح عامي ترغبون في إدراجه في التحديثات القادمة للقاموس الذكي. يمكنكم التواصل معنا عبر البريد الإلكتروني:
             </p>
             <p style="font-weight: 700; color: var(--primary);">
-                📧 ahmedelazab@atomicmail.io
+                📧 support@yourusername.github.io
             </p>
         </article>
 
         <section class="cta-box">
             <h3>جاهز لتجربة الترجمة الفورية؟</h3>
             <p>حوّل رسائل الشات والفرانكو إلى لغة عربية سليمة في ثوانٍ معدودة وبدقة لا مثيل لها.</p>
-            <a href="index.html" class="cta-btn">🚀 افتح المترجم الفوري الآن</a>
+            <a href="/" class="cta-btn">🚀 افتح المترجم الفوري الآن</a>
         </section>
     </main>
 
     <footer>
         <div class="footer-inner">
-            <div class="footer-brand">موقع <span>ترجمة فرانكو</span>  </div>
-            <div class="footer-copy">©   موقع ترجمة فرانكو — جميع الحقوق محفوظة. أداة تحويل صوتي ولغوي مجانية  .</div>
+            <div class="footer-brand">موقع <span>ترجمة فرانكو</span> </div>
+            <div class="footer-copy">©  موقع ترجمة فرانكو — جميع الحقوق محفوظة. أداة تحويل صوتي ولغوي مجانية .</div>
         </div>
     </footer>
 
