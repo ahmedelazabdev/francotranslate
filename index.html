@@ -510,278 +510,278 @@
 
     <div id="toast">تم النسخ بنجاح! ✓</div>
 
-    <script>
-        const chatDictionary = {
-            "ezzayak": "إزيك", "ezayak": "إزيك", "ezayek": "إزيك", "ezayeik": "إزيك",
-            "3amel": "عامل", "3amla": "عاملة", "3amleen": "عاملين",
-            "eh": "إيه", "eih": "إيه", "feen": "فين", "fen": "فين", "fein": "فين",
-            "delwa2ty": "دلوقتي", "delwaty": "دلوقتي", "dlwa2ty": "دلوقتي",
-            "sa7by": "صاحبي", "sahby": "صاحبي", "sa7bi": "صاحبي", "sa7bty": "صاحبتي",
-            "habibi": "حبيبي", "7abibi": "حبيبي", "7bb": "حبيبي", "7abibty": "حبيبتي",
-            "shokran": "شكراً", "shkran": "شكراً", "shukran": "شكراً",
-            "tamam": "تمام", "khalas": "خلاص", "5alas": "خلاص",
-            "msh": "مش", "mesh": "مش", "keda": "كده", "kedah": "كده",
-            "3ayez": "عايز", "3awez": "عايز", "3ayza": "عايزة", "3ayzeen": "عايزين",
-            "wenta": "وانت", "wenty": "وانتي", "wanta": "وأنت",
-            "yalla": "يلا", "mashy": "ماشي", "mashi": "ماشي",
-            "wallahi": "والله", "walahi": "والله",
-            "el7amdolellah": "الحمد لله", "elhemdullah": "الحمد لله", "alhamdulillah": "الحمد لله",
-            "inshallah": "إن شاء الله", "inshaa2llah": "إن شاء الله", "isa": "إن شاء الله",
-            "shlonak": "شلونك", "shlonek": "شلونك", "kaifak": "كيفك", "kefak": "كيفك",
-            "labas": "لاباس", "bzzaf": "بزاف",
-            "saba7": "صباح", "sabah": "صباح", "kheir": "الخير", "5er": "خير", "kheer": "خير",
-            "mesa2": "مساء", "tesba7": "تصبح", "mabrook": "مبروك",
-            "wala": "ولا", "7aga": "حاجة", "haga": "حاجة",
-            "kol": "كل", "sana": "سنة", "tayeb": "طيب",
-            "basha": "باشا", "ya": "يا", "ana": "أنا", "enta": "أنت", "enty": "أنتي",
-            "howa": "هو", "heya": "هي", "e7na": "إحنا", "homma": "هما",
-            "brb": "برب (سأعود قريباً)", "tyt": "خذ راحتك (Take Your Time)", "wlc": "أهلاً بك",
-            "lol": "ههههه", "tc": "انتبه لنفسك (Take Care)", "thx": "شكراً لك"
-        };
+  <script>
+    const chatDictionary = {
+        "ezzayak": "إزيك", "ezayak": "إزيك", "ezayek": "إزيك", "ezayeik": "إزيك",
+        "3amel": "عامل", "3amla": "عاملة", "3amleen": "عاملين",
+        "eh": "إيه", "eih": "إيه", "feen": "فين", "fen": "فين", "fein": "فين",
+        "delwa2ty": "دلوقتي", "delwaty": "دلوقتي", "dlwa2ty": "دلوقتي",
+        "sa7by": "صاحبي", "sahby": "صاحبي", "sa7bi": "صاحبي", "sa7bty": "صاحبتي",
+        "habibi": "حبيبي", "7abibi": "حبيبي", "7bb": "حبيبي", "7abibty": "حبيبتي",
+        "shokran": "شكراً", "shkran": "شكراً", "shukran": "شكراً",
+        "tamam": "تمام", "khalas": "خلاص", "5alas": "خلاص",
+        "msh": "مش", "mesh": "مش", "keda": "كده", "kedah": "كده",
+        "3ayez": "عايز", "3awez": "عايز", "3ayza": "عايزة", "3ayzeen": "عايزين",
+        "wenta": "وانت", "wenty": "وانتي", "wanta": "وأنت",
+        "yalla": "يلا", "mashy": "ماشي", "mashi": "ماشي",
+        "wallahi": "والله", "walahi": "والله",
+        "el7amdolellah": "الحمد لله", "elhemdullah": "الحمد لله", "alhamdulillah": "الحمد لله",
+        "inshallah": "إن شاء الله", "inshaa2llah": "إن شاء الله", "isa": "إن شاء الله",
+        "shlonak": "شلونك", "shlonek": "شلونك", "kaifak": "كيفك", "kefak": "كيفك",
+        "labas": "لاباس", "bzzaf": "بزاف",
+        "saba7": "صباح", "sabah": "صباح", "kheir": "الخير", "5er": "خير", "kheer": "خير",
+        "mesa2": "مساء", "tesba7": "تصبح", "mabrook": "مبروك",
+        "wala": "ولا", "7aga": "حاجة", "haga": "حاجة",
+        "kol": "كل", "sana": "سنة", "tayeb": "طيب",
+        "basha": "باشا", "ya": "يا", "ana": "أنا", "enta": "أنت", "enty": "أنتي",
+        "howa": "هو", "heya": "هي", "e7na": "إحنا", "homma": "هما",
+        "brb": "برب (سأعود قريباً)", "tyt": "خذ راحتك (Take Your Time)", "wlc": "أهلاً بك",
+        "lol": "ههههه", "tc": "انتبه لنفسك (Take Care)", "thx": "شكراً لك"
+    };
 
-        const multiRules = [
-            { f: "kh", a: "خ" }, { f: "sh", a: "ش" }, { f: "ch", a: "ش" },
-            { f: "th", a: "ث" }, { f: "gh", a: "غ" }, { f: "dh", a: "ذ" },
-            { f: "3'", a: "غ" }, { f: "7'", a: "خ" }, { f: "6'", a: "ظ" },
-            { f: "9'", a: "ض" }, { f: "2'", a: "ء" }, { f: "aa", a: "ا" },
-            { f: "ee", a: "ي" }, { f: "oo", a: "و" }, { f: "ou", a: "و" }
-        ];
+    const multiRules = [
+        { f: "kh", a: "خ" }, { f: "sh", a: "ش" }, { f: "ch", a: "ش" },
+        { f: "th", a: "ث" }, { f: "gh", a: "غ" }, { f: "dh", a: "ذ" },
+        { f: "3'", a: "غ" }, { f: "7'", a: "خ" }, { f: "6'", a: "ظ" },
+        { f: "9'", a: "ض" }, { f: "2'", a: "ء" }, { f: "aa", a: "ا" },
+        { f: "ee", a: "ي" }, { f: "oo", a: "و" }, { f: "ou", a: "و" }
+    ];
 
-        const singleRules = {
-            "2": "ء", "3": "ع", "4": "ش", "5": "خ", "6": "ط",
-            "7": "ح", "8": "ق", "9": "ص",
-            "a": "ا", "b": "ب", "c": "ك", "d": "د", "e": "ي",
-            "f": "ف", "g": "ج", "h": "ه", "i": "ي", "j": "ج",
-            "k": "ك", "l": "ل", "m": "م", "n": "ن", "o": "و",
-            "p": "ب", "q": "ق", "r": "ر", "s": "س", "t": "ت",
-            "u": "و", "v": "ف", "w": "و", "x": "كس", "y": "ي", "z": "ز"
-        };
+    const singleRules = {
+        "2": "ء", "3": "ع", "4": "ش", "5": "خ", "6": "ط",
+        "7": "ح", "8": "ق", "9": "ص",
+        "a": "ا", "b": "ب", "c": "ك", "d": "د", "e": "ي",
+        "f": "ف", "g": "ج", "h": "ه", "i": "ي", "j": "ج",
+        "k": "ك", "l": "ل", "m": "م", "n": "ن", "o": "و",
+        "p": "ب", "q": "ق", "r": "ر", "s": "س", "t": "ت",
+        "u": "و", "v": "ف", "w": "و", "x": "كس", "y": "ي", "z": "ز"
+    };
 
-        const reverseWords = {
-            "إزيك": "ezzayak", "ازيك": "ezzayak", "عامل": "3amel", "ايه": "eh", "إيه": "eh",
-            "صاحبي": "sa7by", "حبيبي": "7abibi", "شكرا": "shokran", "شكراً": "shokran",
-            "تمام": "tamam", "خلاص": "5alas", "فين": "feen", "دلوقتي": "delwa2ty",
-            "مش": "mesh", "كده": "keda", "عايز": "3ayez", "عايزة": "3ayza",
-            "صباح": "saba7", "الخير": "el kheir", "مساء": "mesa2", "يلا": "yalla",
-            "ماشي": "mashi", "الحمد لله": "el7amdolellah", "إن شاء الله": "inshallah",
-            "كل سنة وانت طيب": "kol sana wenta tayeb", "شلونك": "shlonak", "كيفك": "kaifak"
-        };
+    const reverseWords = {
+        "إزيك": "ezzayak", "ازيك": "ezzayak", "عامل": "3amel", "ايه": "eh", "إيه": "eh",
+        "صاحبي": "sa7by", "حبيبي": "7abibi", "شكرا": "shokran", "شكراً": "shokran",
+        "تمام": "tamam", "خلاص": "5alas", "فين": "feen", "دلوقتي": "delwa2ty",
+        "مش": "mesh", "كده": "keda", "عايز": "3ayez", "عايزة": "3ayza",
+        "صباح": "saba7", "الخير": "el kheir", "مساء": "mesa2", "يلا": "yalla",
+        "ماشي": "mashi", "الحمد لله": "el7amdolellah", "إن شاء الله": "inshallah",
+        "كل سنة وانت طيب": "kol sana wenta tayeb", "شلونك": "shlonak", "كيفك": "kaifak"
+    };
 
-        const reverseRules = {
-            "ء": "2", "أ": "2", "إ": "2", "آ": "2", "ؤ": "2", "ئ": "2",
-            "ع": "3", "غ": "gh", "ح": "7", "خ": "5", "ط": "6",
-            "ظ": "6'", "ص": "9", "ض": "9'", "ش": "sh", "ث": "th",
-            "ذ": "th", "ق": "8", "ا": "a", "ب": "b", "ت": "t",
-            "ة": "a", "ج": "g", "د": "d", "r": "r", "ز": "z",
-            "س": "s", "ف": "f", "ك": "k", "ل": "l", "م": "m",
-            "ن": "n", "ه": "h", "و": "w", "ي": "y", "ى": "a"
-        };
+    const reverseRules = {
+        "ء": "2", "أ": "2", "إ": "2", "آ": "2", "ؤ": "2", "ئ": "2",
+        "ع": "3", "غ": "gh", "ح": "7", "خ": "5", "ط": "6",
+        "ظ": "6'", "ص": "9", "ض": "9'", "ش": "sh", "ث": "th",
+        "ذ": "th", "ق": "8", "ا": "a", "ب": "b", "ت": "t",
+        "ة": "a", "ج": "g", "د": "d", "ر": "r", "ز": "z",
+        "س": "s", "ف": "f", "ك": "k", "ل": "l", "م": "m",
+        "ن": "n", "ه": "h", "و": "w", "ي": "y", "ى": "a"
+    };
 
-        let currentMode = "franco-to-arabic";
+    let currentMode = "franco-to-arabic";
 
-        const inputEl = document.getElementById("inputText");
-        const outputEl = document.getElementById("outputText");
-        const swapBtn = document.getElementById("swapBtn");
-        const clearBtn = document.getElementById("clearBtn");
-        const copyBtn = document.getElementById("copyBtn");
-        const speakBtn = document.getElementById("speakBtn");
-        const whatsappBtn = document.getElementById("whatsappBtn");
-        const downloadBtn = document.getElementById("downloadBtn");
-        const badge = document.getElementById("directionBadge");
-        const inputLabel = document.getElementById("inputLabel");
-        const outputLabel = document.getElementById("outputLabel");
-        const inputCounter = document.getElementById("inputCounter");
-        const outputCounter = document.getElementById("outputCounter");
-        const toast = document.getElementById("toast");
-        const themeToggle = document.getElementById("themeToggle");
-        const engineSmart = document.getElementById("engineSmart");
-        const engineLiteral = document.getElementById("engineLiteral");
-        const tableSearch = document.getElementById("tableSearch");
-        const numbersTable = document.getElementById("numbersTable");
+    const inputEl = document.getElementById("inputText");
+    const outputEl = document.getElementById("outputText");
+    const swapBtn = document.getElementById("swapBtn");
+    const clearBtn = document.getElementById("clearBtn");
+    const copyBtn = document.getElementById("copyBtn");
+    const speakBtn = document.getElementById("speakBtn");
+    const whatsappBtn = document.getElementById("whatsappBtn");
+    const downloadBtn = document.getElementById("downloadBtn");
+    const badge = document.getElementById("directionBadge");
+    const inputLabel = document.getElementById("inputLabel");
+    const outputLabel = document.getElementById("outputLabel");
+    const inputCounter = document.getElementById("inputCounter");
+    const outputCounter = document.getElementById("outputCounter");
+    const toast = document.getElementById("toast");
+    const themeToggle = document.getElementById("themeToggle");
+    const engineSmart = document.getElementById("engineSmart");
+    const engineLiteral = document.getElementById("engineLiteral");
+    const tableSearch = document.getElementById("tableSearch");
+    const numbersTable = document.getElementById("numbersTable");
 
-        function getWords(s) { return s.trim() ? s.trim().split(/\s+/).length : 0; }
+    function getWords(s) { return s.trim() ? s.trim().split(/\s+/).length : 0; }
 
-        function showToast(msg) {
-            toast.innerText = msg;
-            toast.classList.add("active");
-            setTimeout(() => toast.classList.remove("active"), 2200);
+    function showToast(msg) {
+        toast.innerText = msg;
+        toast.classList.add("active");
+        setTimeout(() => toast.classList.remove("active"), 2200);
+    }
+
+    function literalPhonetic(str) {
+        let res = str.toLowerCase();
+        for (let item of multiRules) {
+            res = res.split(item.f).join(item.a);
+        }
+        let out = "";
+        for (let ch of res) {
+            out += (singleRules[ch] !== undefined) ? singleRules[ch] : ch;
+        }
+        return out;
+    }
+
+    function translateFrancoToArabic(str) {
+        if (engineLiteral.checked) {
+            return literalPhonetic(str);
         }
 
-        function literalPhonetic(str) {
-            let res = str.toLowerCase();
-            for (let item of multiRules) {
-                res = res.split(item.f).join(item.a);
-            }
-            let out = "";
-            for (let ch of res) {
-                out += (singleRules[ch] !== undefined) ? singleRules[ch] : ch;
-            }
-            return out;
-        }
-
-        function translateFrancoToArabic(str) {
-            if (engineLiteral.checked) {
-                return literalPhonetic(str);
-            }
-
-            const tokens = str.split(/(\s+|[.,!؟?":;()\[\]{}]+)/);
-            let result = [];
-            for (let token of tokens) {
-                if (!token) continue;
-                let clean = token.toLowerCase().trim();
-                
-                if (chatDictionary[clean]) {
-                    result.push(chatDictionary[clean]);
-                } else if (clean.startsWith("el") && clean.length > 2 && chatDictionary[clean.slice(2)]) {
-                    result.push("ال" + chatDictionary[clean.slice(2)]);
-                } else if (clean.startsWith("al") && clean.length > 2 && chatDictionary[clean.slice(2)]) {
-                    result.push("ال" + chatDictionary[clean.slice(2)]);
-                } else if (clean.startsWith("w") && clean.length > 1 && chatDictionary[clean.slice(1)]) {
-                    result.push("و" + chatDictionary[clean.slice(1)]);
-                } else if (/^[a-zA-Z0-9'’]+$/.test(token)) {
-                    result.push(literalPhonetic(token));
-                } else {
-                    result.push(token);
-                }
-            }
-            return result.join("");
-        }
-
-        function translateArabicToFranco(str) {
-            let text = str;
-            for (let [ar, fr] of Object.entries(reverseWords)) {
-                text = text.split(ar).join(fr);
-            }
-            let out = "";
-            for (let ch of text) {
-                out += (reverseRules[ch] !== undefined) ? reverseRules[ch] : ch;
-            }
-            return out;
-        }
-
-        function doTranslate() {
-            const val = inputEl.value;
-            inputCounter.innerText = `${val.length} حرف | ${getWords(val)} كلمة`;
-            const result = (currentMode === "franco-to-arabic")
-                ? translateFrancoToArabic(val)
-                : translateArabicToFranco(val);
-            outputEl.value = result;
-            outputCounter.innerText = `${result.length} حرف | ${getWords(result)} كلمة`;
-        }
-
-        inputEl.addEventListener("input", doTranslate);
-        engineSmart.addEventListener("change", doTranslate);
-        engineLiteral.addEventListener("change", doTranslate);
-
-        function insertFrancoKey(key) {
-            const start = inputEl.selectionStart;
-            const end = inputEl.selectionEnd;
-            const text = inputEl.value;
-            inputEl.value = text.substring(0, start) + key + text.substring(end);
-            inputEl.selectionStart = inputEl.selectionEnd = start + key.length;
-            inputEl.focus();
-            doTranslate();
-        }
-
-        function loadSample(sampleText) {
-            if (currentMode !== "franco-to-arabic") {
-                swapBtn.click();
-            }
-            inputEl.value = sampleText;
-            doTranslate();
-            inputEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-
-        swapBtn.addEventListener("click", () => {
-            if (currentMode === "franco-to-arabic") {
-                currentMode = "arabic-to-franco";
-                badge.innerText = "من: عربي ⬅ إلى: فرانكو (Franco)";
-                inputLabel.innerText = "النص العربي:";
-                outputLabel.innerText = "الترجمة بالفرانكو:";
-                inputEl.placeholder = "اكتب النص العربي هنا ليتحول فورياً إلى فرانكو...";
-                document.getElementById("francoKeypad").style.display = "none";
+        const tokens = str.split(/(\s+|[.,!؟?":;()\[\]{}]+)/);
+        let result = [];
+        for (let token of tokens) {
+            if (!token) continue;
+            let clean = token.toLowerCase().trim();
+            
+            if (chatDictionary[clean]) {
+                result.push(chatDictionary[clean]);
+            } else if (clean.startsWith("el") && clean.length > 2 && chatDictionary[clean.slice(2)]) {
+                result.push("ال" + chatDictionary[clean.slice(2)]);
+            } else if (clean.startsWith("al") && clean.length > 2 && chatDictionary[clean.slice(2)]) {
+                result.push("ال" + chatDictionary[clean.slice(2)]);
+            } else if (clean.startsWith("w") && clean.length > 1 && chatDictionary[clean.slice(1)]) {
+                result.push("و" + chatDictionary[clean.slice(1)]);
+            } else if (/^[a-zA-Z0-9'’]+$/.test(token)) {
+                result.push(literalPhonetic(token));
             } else {
-                currentMode = "franco-to-arabic";
-                badge.innerText = "من: فرانكو (Franco) ⬅ إلى: عربي";
-                inputLabel.innerText = "نص الفرانكو (اكتب هنا):";
-                outputLabel.innerText = "الترجمة العربية:";
-                inputEl.placeholder = "اكتب أو الصق نص الفرانكو هنا... مثال: ezzayak ya sa7by 3amel eh?";
-                document.getElementById("francoKeypad").style.display = "flex";
+                result.push(token);
             }
-            const tmp = inputEl.value;
-            inputEl.value = outputEl.value;
-            doTranslate();
-        });
+        }
+        return result.join("");
+    }
 
-        clearBtn.addEventListener("click", () => {
-            inputEl.value = "";
-            outputEl.value = "";
-            doTranslate();
-            inputEl.focus();
-        });
+    function translateArabicToFranco(str) {
+        let text = str;
+        for (let [ar, fr] of Object.entries(reverseWords)) {
+            text = text.split(ar).join(fr);
+        }
+        let out = "";
+        for (let ch of text) {
+            out += (reverseRules[ch] !== undefined) ? reverseRules[ch] : ch;
+        }
+        return out;
+    }
 
-        copyBtn.addEventListener("click", () => {
-            if (!outputEl.value) return;
-            navigator.clipboard.writeText(outputEl.value).then(() => {
-                showToast("تم النسخ بنجاح! ✓");
+    function doTranslate() {
+        const val = inputEl.value;
+        inputCounter.innerText = `${val.length} حرف | ${getWords(val)} كلمة`;
+        const result = (currentMode === "franco-to-arabic")
+            ? translateFrancoToArabic(val)
+            : translateArabicToFranco(val);
+        outputEl.value = result;
+        outputCounter.innerText = `${result.length} حرف | ${getWords(result)} كلمة`;
+    }
+
+    inputEl.addEventListener("input", doTranslate);
+    engineSmart.addEventListener("change", doTranslate);
+    engineLiteral.addEventListener("change", doTranslate);
+
+    function insertFrancoKey(key) {
+        const start = inputEl.selectionStart;
+        const end = inputEl.selectionEnd;
+        const text = inputEl.value;
+        inputEl.value = text.substring(0, start) + key + text.substring(end);
+        inputEl.selectionStart = inputEl.selectionEnd = start + key.length;
+        inputEl.focus();
+        doTranslate();
+    }
+
+    function loadSample(sampleText) {
+        if (currentMode !== "franco-to-arabic") {
+            swapBtn.click();
+        }
+        inputEl.value = sampleText;
+        doTranslate();
+        inputEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    swapBtn.addEventListener("click", () => {
+        if (currentMode === "franco-to-arabic") {
+            currentMode = "arabic-to-franco";
+            badge.innerText = "من: عربي ⬅ إلى: فرانكو (Franco)";
+            inputLabel.innerText = "النص العربي:";
+            outputLabel.innerText = "الترجمة بالفرانكو:";
+            inputEl.placeholder = "اكتب النص العربي هنا ليتحول فورياً إلى فرانكو...";
+            document.getElementById("francoKeypad").style.display = "none";
+        } else {
+            currentMode = "franco-to-arabic";
+            badge.innerText = "من: فرانكو (Franco) ⬅ إلى: عربي";
+            inputLabel.innerText = "نص الفرانكو (اكتب هنا):";
+            outputLabel.innerText = "الترجمة العربية:";
+            inputEl.placeholder = "اكتب أو الصق نص الفرانكو هنا... مثال: ezzayak ya sa7by 3amel eh?";
+            document.getElementById("francoKeypad").style.display = "flex";
+        }
+        const tmp = inputEl.value;
+        inputEl.value = outputEl.value;
+        doTranslate();
+    });
+
+    clearBtn.addEventListener("click", () => {
+        inputEl.value = "";
+        outputEl.value = "";
+        doTranslate();
+        inputEl.focus();
+    });
+
+    copyBtn.addEventListener("click", () => {
+        if (!outputEl.value) return;
+        navigator.clipboard.writeText(outputEl.value).then(() => {
+            showToast("تم النسخ بنجاح! ✓");
+        });
+    });
+
+    speakBtn.addEventListener("click", () => {
+        if (!outputEl.value) return;
+        if ('speechSynthesis' in window) {
+            const utterance = new SpeechSynthesisUtterance(outputEl.value);
+            utterance.lang = (currentMode === "franco-to-arabic") ? 'ar-SA' : 'en-US';
+            window.speechSynthesis.speak(utterance);
+        } else {
+            showToast("المتصفح لا يدعم النطق الصوتي");
+        }
+    });
+
+    whatsappBtn.addEventListener("click", () => {
+        if (!outputEl.value) return;
+        const shareUrl = "https://api.whatsapp.com/send?text=" + encodeURIComponent(outputEl.value);
+        window.open(shareUrl, '_blank');
+    });
+
+    downloadBtn.addEventListener("click", () => {
+        if (!outputEl.value) return;
+        const blob = new Blob([outputEl.value], { type: "text/plain;charset=utf-8" });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = "ترجمة_فرانكو.txt";
+        link.click();
+        URL.revokeObjectURL(link.href);
+    });
+
+    if (tableSearch) {
+        tableSearch.addEventListener("input", function() {
+            const query = this.value.toLowerCase().trim();
+            const rows = numbersTable.querySelectorAll("tbody tr");
+            rows.forEach(row => {
+                const text = row.innerText.toLowerCase();
+                row.style.display = text.includes(query) ? "" : "none";
             });
         });
+    }
 
-        speakBtn.addEventListener("click", () => {
-            if (!outputEl.value) return;
-            if ('speechSynthesis' in window) {
-                const utterance = new SpeechSynthesisUtterance(outputEl.value);
-                utterance.lang = (currentMode === "franco-to-arabic") ? 'ar-SA' : 'en-US';
-                window.speechSynthesis.speak(utterance);
-            } else {
-                showToast("المتصفح لا يدعم النطق الصوتي");
-            }
-        });
-
-        whatsappBtn.addEventListener("click", () => {
-            if (!outputEl.value) return;
-            const shareUrl = "https://api.whatsapp.com/send?text=" + encodeURIComponent(outputEl.value);
-            window.open(shareUrl, '_blank');
-        });
-
-        downloadBtn.addEventListener("click", () => {
-            if (!outputEl.value) return;
-            const blob = new Blob([outputEl.value], { type: "text/plain;charset=utf-8" });
-            const link = document.createElement("a");
-            link.href = URL.createObjectURL(blob);
-            link.download = "ترجمة_فرانكو.txt";
-            link.click();
-            URL.revokeObjectURL(link.href);
-        });
-
-        if (tableSearch) {
-            tableSearch.addEventListener("input", function() {
-                const query = this.value.toLowerCase().trim();
-                const rows = numbersTable.querySelectorAll("tbody tr");
-                rows.forEach(row => {
-                    const text = row.innerText.toLowerCase();
-                    row.style.display = text.includes(query) ? "" : "none";
-                });
-            });
-        }
-
-        const savedTheme = localStorage.getItem("theme");
-        if (savedTheme === "dark") {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+        themeToggle.innerText = "☀️ الوضع النهاري";
+    }
+    themeToggle.addEventListener("click", () => {
+        const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+        if (isDark) {
+            document.documentElement.removeAttribute("data-theme");
+            themeToggle.innerText = "🌙 الوضع الليلي";
+            localStorage.setItem("theme", "light");
+        } else {
             document.documentElement.setAttribute("data-theme", "dark");
             themeToggle.innerText = "☀️ الوضع النهاري";
+            localStorage.setItem("theme", "dark");
         }
-        themeToggle.addEventListener("click", () => {
-            const isDark = document.documentElement.getAttribute("data-theme") === "dark";
-            if (isDark) {
-                document.documentElement.removeAttribute("data-theme");
-                themeToggle.innerText = "🌙 الوضع الليلي";
-                localStorage.setItem("theme", "light");
-            } else {
-                document.documentElement.setAttribute("data-theme", "dark");
-                themeToggle.innerText = "☀️ الوضع النهاري";
-                localStorage.setItem("theme", "dark");
-            }
-        });
-    </script>
+    });
+</script>
 </body>
 </html>
