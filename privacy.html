@@ -4,39 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سياسة الخصوصية | موقع ترجمة فرانكو</title>
-    <meta name="description" content="سياسة الخصوصية وشروط الاستخدام الخاصة بموقع ترجمة فرانكو. نضمن عدم تسجيل أو حفظ أي نصوص يتم إدخالها، مع الامتثال التام لمعايير Google AdSense وGDPR.">
+    <meta name="description" content="تعرف على سياسة الخصوصية لموقع ترجمة فرانكو. نلتزم بأعلى معايير الأمان والشفافية مع معالجة النصوص محلياً بنسبة 100% دون تخزين أو مشاركة أي بيانات.">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://yourusername.github.io/privacy.html">
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="سياسة الخصوصية - موقع ترجمة فرانكو">
+    <meta property="og:description" content="التزامنا بحماية خصوصية المستخدمين وسرية نصوص المحادثات بنسبة 100%.">
+    <meta property="og:url" content="https://yourusername.github.io/privacy.html">
+
+    <!-- Schema Markup: WebPage & Breadcrumb -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://yourusername.github.io/privacy.html#webpage",
+          "url": "https://yourusername.github.io/privacy.html",
+          "name": "سياسة الخصوصية - موقع ترجمة فرانكو",
+          "description": "وثيقة سياسة الخصوصية وضمان عدم حفظ أو تخزين نصوص ورسائل المستخدمين.",
+          "inLanguage": "ar"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "الرئيسية",
+              "item": "https://yourusername.github.io/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "سياسة الخصوصية",
+              "item": "https://yourusername.github.io/privacy.html"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
     <style>
         :root {
             --primary: #2563eb;
+            --primary-dark: #1d4ed8;
             --bg-page: #f8fafc;
             --surface: #ffffff;
             --border: #e2e8f0;
             --text-title: #0f172a;
             --text-body: #334155;
             --text-muted: #64748b;
+            --card-badge: #eff6ff;
             --radius-lg: 16px;
+            --radius-md: 10px;
+            --shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
         }
+
+        [data-theme="dark"] {
+            --primary: #3b82f6;
+            --primary-dark: #60a5fa;
+            --bg-page: #0f172a;
+            --surface: #1e293b;
+            --border: #334155;
+            --text-title: #f8fafc;
+            --text-body: #cbd5e1;
+            --text-muted: #94a3b8;
+            --card-badge: #1e3a8a;
+            --shadow: 0 10px 25px -5px rgba(0,0,0,0.5);
+        }
+
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Cairo", sans-serif; }
-        body { background: var(--bg-page); color: var(--text-body); line-height: 1.85; min-height: 100vh; display: flex; flex-direction: column; }
+        body { background: var(--bg-page); color: var(--text-body); line-height: 1.85; min-height: 100vh; display: flex; flex-direction: column; transition: background 0.3s, color 0.3s; }
+        
+        /* Header */
         header { background: var(--surface); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px); }
-        .nav-wrap { max-width: 1100px; margin: 0 auto; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; }
+        .nav-wrap { max-width: 1100px; margin: 0 auto; padding: 0.85rem 1.25rem; display: flex; justify-content: space-between; align-items: center; }
         .brand { font-size: 1.35rem; font-weight: 800; color: var(--primary); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; }
         .brand svg { fill: var(--primary); width: 28px; height: 28px; }
-        .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+        .nav-actions { display: flex; align-items: center; gap: 1rem; }
+        .nav-links { display: flex; gap: 1.2rem; list-style: none; }
         .nav-links a { text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 0.95rem; transition: color 0.2s; }
         .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+        .theme-toggle { background: transparent; border: 1px solid var(--border); color: var(--text-body); padding: 0.4rem 0.8rem; border-radius: 20px; cursor: pointer; font-size: 0.85rem; font-weight: 600; display: flex; align-items: center; gap: 0.3rem; }
 
-        main { max-width: 900px; width: 100%; margin: 2.5rem auto; padding: 0 1.25rem; flex: 1; }
-        .hero { text-align: center; margin-bottom: 2rem; }
-        .hero h1 { font-size: 2.2rem; color: var(--text-title); margin-bottom: 0.5rem; }
-        .hero p { color: var(--text-muted); font-size: 1.1rem; }
+        main { max-width: 1000px; width: 100%; margin: 2rem auto 4rem; padding: 0 1.25rem; flex: 1; }
 
-        .content-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2.5rem; margin-bottom: 2rem; }
-        .content-box h2 { font-size: 1.45rem; color: var(--text-title); margin: 1.8rem 0 0.8rem; border-right: 4px solid var(--primary); padding-right: 0.8rem; }
-        .content-box p { margin-bottom: 1.2rem; font-size: 1.02rem; text-align: justify; }
-        .content-box ul { padding-right: 1.8rem; margin-bottom: 1.4rem; }
-        .content-box li { margin-bottom: 0.6rem; }
+        .breadcrumb { display: flex; gap: 0.5rem; font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.5rem; align-items: center; }
+        .breadcrumb a { color: var(--primary); text-decoration: none; }
+
+        .page-header { margin-bottom: 2.5rem; text-align: center; }
+        .page-header .badge { display: inline-block; background: var(--card-badge); color: var(--primary); padding: 0.35rem 1.1rem; border-radius: 20px; font-weight: 700; font-size: 0.85rem; margin-bottom: 0.8rem; }
+        .page-header h1 { font-size: 2.3rem; font-weight: 800; color: var(--text-title); margin-bottom: 0.8rem; }
+        .page-header p { color: var(--text-muted); font-size: 1.1rem; max-width: 700px; margin: 0 auto; }
+
+        .content-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow); padding: 2.5rem; margin-bottom: 2rem; }
+        .content-card h2 { font-size: 1.45rem; color: var(--text-title); margin: 2rem 0 0.8rem; border-right: 4px solid var(--primary); padding-right: 0.8rem; }
+        .content-card h2:first-of-type { margin-top: 0; }
+        .content-card p { margin-bottom: 1.2rem; font-size: 1.02rem; text-align: justify; }
+        .content-card ul { padding-right: 1.8rem; margin-bottom: 1.5rem; }
+        .content-card li { margin-bottom: 0.6rem; font-size: 1rem; }
+
+        .alert-box { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: var(--radius-md); padding: 1.2rem 1.5rem; margin: 1.5rem 0; color: #1e40af; }
+        [data-theme="dark"] .alert-box { background: #1e293b; border-color: #3b82f6; color: #93c5fd; }
+        .alert-box strong { display: block; margin-bottom: 0.4rem; font-size: 1.05rem; }
 
         footer { background: var(--surface); border-top: 1px solid var(--border); padding: 2rem 1.5rem; margin-top: auto; }
         .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
@@ -53,54 +128,134 @@
                 <svg viewBox="0 0 24 24"><path d="M12.87 15.07l-2.54-2.51.03-.08c1.74-1.94 2.98-4.17 3.71-6.49H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>
                 <span>ترجمة فرانكو</span>
             </a>
-            <ul class="nav-links">
-                <li><a href="index.html">المترجم الفوري</a></li>
-                <li><a href="about.html">عن الموقع</a></li>
-                <li><a href="privacy.html" class="active">الخصوصية</a></li>
-            </ul>
+            <div class="nav-actions">
+                <ul class="nav-links">
+                    <li><a href="index.html">المترجم الفوري</a></li>
+                    <li><a href="about.html">عن الموقع</a></li>
+                    <li><a href="privacy.html" class="active">الخصوصية</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" title="تبديل الوضع الليلي">🌙 الوضع الليلي</button>
+            </div>
         </div>
     </header>
 
     <main>
-        <div class="hero">
-            <h1>سياسة الخصوصية وأمان البيانات</h1>
-            <p>نوضح هنا بكل شفافية كيفية تعاملنا مع البيانات والتزامنا الصارم بحماية خصوصية المستخدمين.</p>
+        <div class="breadcrumb">
+            <a href="index.html">الرئيسية</a>
+            <span>/</span>
+            <span>سياسة الخصوصية</span>
         </div>
 
-        <article class="content-box">
-            <h2>1. الخصوصية المطلقة للنصوص المُدخلة</h2>
+        <section class="page-header">
+            <span class="badge">🔒 أمانك أولويتنا المطلقة</span>
+            <h1>سياسة الخصوصية وسرية البيانات</h1>
+            <p>نحن نلتزم بحماية خصوصيتك وضمان أعلى معايير الشفافية والأمان عند استخدامك لأداة ترجمة فرانكو.</p>
+        </section>
+
+        <article class="content-card">
+            <div class="alert-box">
+                <strong>🛡️ المبدأ الأساسي لأداتنا: خصوصية محلية بنسبة 100%</strong>
+                جميع النصوص والرسائل التي تكتبها أو تلصقها في المترجم تتم معالجتها لحظياً ومحلياً داخل متصفح جهازك باستخدام تقنية JavaScript، ولا يتم إرسال أي نص إلى خوادم خارجية أو حفظه في أي قاعدة بيانات إطلاقاً.
+            </div>
+
+            <h2>1. مقدمة</h2>
             <p>
-                تعمل أداة <strong>ترجمة فرانكو</strong> بتقنية المعالجة المحلية الخالصة (Local Execution). هذا يعني أن أي نص تقوم بكتابته أو لصقه داخل الأداة تجري معالجته داخل ذاكرة المتصفح النشطة فقط. <strong>نحن لا نقوم برفع، أو تسجيل، أو حفظ، أو الاطلاع على أي نصوص أو محادثات يُدخلها الزائر على الإطلاق</strong>.
+                تحظى خصوصية زوار موقع <strong>ترجمة فرانكو</strong> بأهمية بالغة لدينا. توضح هذه الوثيقة نوعية المعلومات التي قد نتلقاها أو نجمعها عند استخدامك للموقع، وكيفية تعاملنا معها لضمان تجربة آمنة ومريحة تلبي أعلى المعايير القانونية والأخلاقية.
             </p>
 
-            <h2>2. ملفات تعريف الارتباط (Cookies) والشراكات الإعلانية</h2>
+            <h2>2. عدم جمع أو تخزين نصوص المحادثات</h2>
             <p>
-                لا يستخدم الموقع ملفات تعريف ارتباط خاصة لجمع بيانات شخصية عن هويات الزوار. وفي حال الاستعانة بشبكات إعلانية معتمدة مثل Google AdSense لدعم استمرار الخدمة مجاناً:
+                نؤكد مجدداً أن أداة <strong>ترجمة فرانكو</strong> مصممة كأداة تعمل من جانب العميل فقط (Client-Side Application). وهذا يعني:
             </p>
             <ul>
-                <li>تستخدم شركة Google ملفات تعريف الارتباط لعرض الإعلانات استناداً إلى زيارات المستخدم السابقة لهذا الموقع أو لمواقع أخرى على شبكة الإنترنت.</li>
-                <li>يحق للزائر إلغاء تخصيص الإعلانات في أي وقت عبر الانتقال إلى صفحة <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">إعدادات الإعلانات من Google</a>.</li>
+                <li>لا نقوم بحفظ أو تسجيل أي كلمة أو محادثة تكتبها داخل صناديق النصوص.</li>
+                <li>لا يتم نقل نصوصك عبر شبكة الإنترنت إلى أي خادم تابع لنا أو لأي طرف ثالث.</li>
+                <li>بمجرد إغلاق المتصفح أو مسح النص، يُمحى النص تماماً من ذاكرة جهازك المؤقتة.</li>
             </ul>
 
-            <h2>3. ملفات السجل القياسية (Server Logs)</h2>
+            <h2>3. التخزين المحلي (Local Storage)</h2>
             <p>
-                كأي موقع ويب مستضاف على منصات توزيع عالمية، قد تسجل خوادم الاستضافة تلقائياً بعض البيانات التقنية غير المحددة للهوية (مثل نوع المتصفح، نظام التشغيل، والتاريخ والوقت) لأغراض تأمين الاتصال ومكافحة الهجمات السيبرانية.
+                يستخدم موقعنا تقنية التخزين المحلي للمتصفح (HTML5 LocalStorage) لغرض واحد فقط وهو تحسين تجربة التصفح، وتحديداً:
+            </p>
+            <ul>
+                <li><strong>تفضيل المظهر (Theme Preference):</strong> حفظ اختيارك المفضل بين "الوضع الليلي" أو "الوضع النهاري" بحيث يظهر الموقع بالمظهر نفسه عند زيارتك القادمة.</li>
+            </ul>
+            <p>
+                لا يحتوي هذا التخزين على أي بيانات شخصية، ويمكنك مسحه في أي وقت من إعدادات المتصفح لديك.
             </p>
 
-            <h2>4. شروط الاستخدام وإخلاء المسؤولية</h2>
+            <h2>4. ملفات السجل (Log Files)</h2>
             <p>
-                يتم توفير خدمات الترجمة لأغراض التسهيل اللغوي والتواصلي اليومي "كما هي". ونظراً لأن لغة الفرانكو تعتمد على الاختلافات الفردية والسماعية، فإن المنصة تبذل أقصى جهد لتقديم الترجمة الأدق لكنها لا تتحمل أي مسؤولية عن أي سوء فهم ناتج عن تباين اللهجات بين المتحدثين.
+                مثل معظم مواقع الويب القياسية، قد تسجل خوادم الاستضافة تلقائياً بعض المعلومات الفنية غير الشخصية لأغراض أمنية وضمان استقرار الخدمة، وتشمل هذه البيانات:
+            </p>
+            <ul>
+                <li>عنوان بروتوكول الإنترنت (IP Address) بشكل مجهول الهوية.</li>
+                <li>نوع المتصفح ونظام التشغيل.</li>
+                <li>تاريخ ووقت الزيارة والصفحات التي تمت زيارتها.</li>
+            </ul>
+            <p>
+                هذه المعلومات لا ترتبط بأي معلومات تحدد هويتك الشخصية وتُستخدم فقط لتحليل الأداء وحماية الموقع من الهجمات السيبرانية.
+            </p>
+
+            <h2>5. ملفات تعريف الارتباط والإعلانات (Cookies)</h2>
+            <p>
+                موقعنا يقدم أداته مجاناً لجميع المستخدمين. في حال تم عرض إعلانات مستقبلاً لدعم تكاليف الاستضافة، قد تستخدم شبكات الإعلانات الخارجية (مثل Google AdSense) ملفات تعريف الارتباط (Cookies) لعرض إعلانات ملائمة بناءً على زيارات المستخدم السابقة لموقعنا أو لمواقع أخرى.
+            </p>
+            <p>
+                يمكنك في أي وقت تعطيل ملفات تعريف الارتباط المخصصة للإعلانات من خلال زيارة <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">إعدادات إعلانات Google</a>.
+            </p>
+
+            <h2>6. روابط لمواقع خارجية</h2>
+            <p>
+                قد يحتوي موقعنا على روابط لمواقع خارجية (مثل زر المشاركة عبر تطبيق WhatsApp). نحن غير مسؤولين عن ممارسات الخصوصية أو محتوى تلك المواقع، ونوصي بمراجعة سياسات الخصوصية الخاصة بكل موقع تزوره.
+            </p>
+
+            <h2>7. خصوصية الأطفال (COPPA)</h2>
+            <p>
+                الموقع آمن تماماً للاستخدام العائلي ولا يقوم بجمع أي معلومات شخصية من أي شخص، بما في ذلك الأطفال دون سن 13 عاماً.
+            </p>
+
+            <h2>8. تعديلات على سياسة الخصوصية</h2>
+            <p>
+                نحتفظ بالحق في تحديث سياسة الخصوصية هذه من حين لآخر لمواكبة أي تطورات تقنية أو قانونية. سيتم نشر أي تغييرات في هذه الصفحة مع تحديث تاريخ المراجعة.
+            </p>
+
+            <h2>9. اتصل بنا</h2>
+            <p>
+                إذا كانت لديك أي استفسارات أو أسئلة بخصوص سياسة الخصوصية هذه، يمكنك مراسلتنا عبر البريد الإلكتروني:
+            </p>
+            <p style="font-weight: 700; color: var(--primary);">
+                📧 privacy@yourusername.github.io
             </p>
         </article>
     </main>
 
-    <!-- الفوتر النظيف والمطور بدون قوائم روابط -->
     <footer>
         <div class="footer-inner">
-            <div class="footer-brand">موقع <span>ترجمة فرانكو</span></div>
-            <div class="footer-copy">© 2026 موقع ترجمة فرانكو — جميع الحقوق محفوظة. أداة تحويل صوتي ولغوي مجانية وفائقة السرعة.</div>
+            <div class="footer-brand">موقع <span>ترجمة فرانكو</span> 2026</div>
+            <div class="footer-copy">© 2026 موقع ترجمة فرانكو — جميع الحقوق محفوظة. أداة تحويل صوتي ولغوي مجانية بدون إعلانات.</div>
         </div>
     </footer>
 
+    <script>
+        const themeToggle = document.getElementById("themeToggle");
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+            themeToggle.innerText = "☀️ الوضع النهاري";
+        }
+        themeToggle.addEventListener("click", () => {
+            const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+            if (isDark) {
+                document.documentElement.removeAttribute("data-theme");
+                themeToggle.innerText = "🌙 الوضع الليلي";
+                localStorage.setItem("theme", "light");
+            } else {
+                document.documentElement.setAttribute("data-theme", "dark");
+                themeToggle.innerText = "☀️ الوضع النهاري";
+                localStorage.setItem("theme", "dark");
+            }
+        });
+    </script>
 </body>
 </html>
