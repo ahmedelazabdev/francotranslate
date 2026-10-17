@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سياسة الخصوصية وشروط الاستخدام | موقع ترجمة فرانكو</title>
-    <meta name="description" content="سياسة الخصوصية الرسمية لموقع ترجمة فرانكو. توضيح معالجة النصوص محلياً بدون تخزين، الامتثال لقوانين GDPR وCCPA، وسياسات ملفات تعريف الارتباط والإعلانات.">
+    <title>سياسة الخصوصية | موقع ترجمة فرانكو</title>
+    <meta name="description" content="سياسة الخصوصية وشروط الاستخدام الخاصة بموقع ترجمة فرانكو. نضمن عدم تسجيل أو حفظ أي نصوص يتم إدخالها، مع الامتثال التام لمعايير Google AdSense وGDPR.">
     <link rel="canonical" href="https://yourusername.github.io/privacy.html">
     <style>
         :root {
@@ -18,13 +18,13 @@
             --radius-lg: 16px;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Cairo", sans-serif; }
-        body { background: var(--bg-page); color: var(--text-body); line-height: 1.8; min-height: 100vh; display: flex; flex-direction: column; }
-        header { background: var(--surface); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+        body { background: var(--bg-page); color: var(--text-body); line-height: 1.85; min-height: 100vh; display: flex; flex-direction: column; }
+        header { background: var(--surface); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px); }
         .nav-wrap { max-width: 1100px; margin: 0 auto; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; }
         .brand { font-size: 1.35rem; font-weight: 800; color: var(--primary); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; }
         .brand svg { fill: var(--primary); width: 28px; height: 28px; }
         .nav-links { display: flex; gap: 1.5rem; list-style: none; }
-        .nav-links a { text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 0.95rem; }
+        .nav-links a { text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 0.95rem; transition: color 0.2s; }
         .nav-links a:hover, .nav-links a.active { color: var(--primary); }
 
         main { max-width: 900px; width: 100%; margin: 2.5rem auto; padding: 0 1.25rem; flex: 1; }
@@ -33,21 +33,16 @@
         .hero p { color: var(--text-muted); font-size: 1.1rem; }
 
         .content-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2.5rem; margin-bottom: 2rem; }
-        .content-box h2 { font-size: 1.4rem; color: var(--text-title); margin: 1.8rem 0 0.8rem; border-right: 4px solid var(--primary); padding-right: 0.8rem; }
-        .content-box p { margin-bottom: 1rem; font-size: 1.02rem; }
-        .content-box ul { padding-right: 1.8rem; margin-bottom: 1.2rem; }
-        .content-box li { margin-bottom: 0.5rem; }
+        .content-box h2 { font-size: 1.45rem; color: var(--text-title); margin: 1.8rem 0 0.8rem; border-right: 4px solid var(--primary); padding-right: 0.8rem; }
+        .content-box p { margin-bottom: 1.2rem; font-size: 1.02rem; text-align: justify; }
+        .content-box ul { padding-right: 1.8rem; margin-bottom: 1.4rem; }
+        .content-box li { margin-bottom: 0.6rem; }
 
-        footer { background: var(--surface); border-top: 1px solid var(--border); padding: 2.5rem 1.5rem 1.5rem; margin-top: auto; }
-        .footer-wrap { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 2rem; margin-bottom: 1.5rem; }
-        @media (max-width: 768px) { .footer-wrap { grid-template-columns: 1fr; } }
-        .footer-col h4 { font-size: 1.1rem; color: var(--text-title); margin-bottom: 0.8rem; }
-        .footer-col p { color: var(--text-muted); font-size: 0.9rem; }
-        .footer-col ul { list-style: none; }
-        .footer-col li { margin-bottom: 0.5rem; }
-        .footer-col a { text-decoration: none; color: var(--text-muted); font-size: 0.9rem; }
-        .footer-col a:hover { color: var(--primary); }
-        .footer-bottom { max-width: 1100px; margin: 0 auto; padding-top: 1.5rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.85rem; flex-wrap: wrap; }
+        footer { background: var(--surface); border-top: 1px solid var(--border); padding: 2rem 1.5rem; margin-top: auto; }
+        .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .footer-brand { font-size: 1.1rem; font-weight: 700; color: var(--text-title); }
+        .footer-brand span { color: var(--primary); }
+        .footer-copy { color: var(--text-muted); font-size: 0.88rem; }
     </style>
 </head>
 <body>
@@ -60,81 +55,50 @@
             </a>
             <ul class="nav-links">
                 <li><a href="index.html">المترجم الفوري</a></li>
-                <li><a href="about.html">من نحن</a></li>
-                <li><a href="privacy.html" class="active">سياسة الخصوصية</a></li>
+                <li><a href="about.html">عن الموقع</a></li>
+                <li><a href="privacy.html" class="active">الخصوصية</a></li>
             </ul>
         </div>
     </header>
 
     <main>
         <div class="hero">
-            <h1>سياسة الخصوصية وشروط الاستخدام</h1>
-            <p>أمانك الرقمي وخصوصية محادثاتك هي أولوية قصوى بالنسبة لنا في موقع ترجمة فرانكو.</p>
+            <h1>سياسة الخصوصية وأمان البيانات</h1>
+            <p>نوضح هنا بكل شفافية كيفية تعاملنا مع البيانات والتزامنا الصارم بحماية خصوصية المستخدمين.</p>
         </div>
 
         <article class="content-box">
-            <h2>1. ضمان حماية النصوص والمحادثات</h2>
+            <h2>1. الخصوصية المطلقة للنصوص المُدخلة</h2>
             <p>
-                إن أداة <strong>ترجمة فرانكو</strong> مصممة بنظام تقني يعمل من جهة العميل فقط (Client-side JavaScript). وهذا يعني بصورة قاطعة أن <strong>جميع النصوص والرسائل التي تقوم بإدخالها أو لصقها داخل مربع الترجمة لا يتم إرسالها إلى أي سيرفر خارجي، ولا يتم تسجيلها أو تخزينها على الإطلاق</strong>. تتم المعالجة بالكامل داخل ذاكرة متصفحك الشخصي وتختفي بمجرد إغلاق الصفحة أو مسح الحقول.
+                تعمل أداة <strong>ترجمة فرانكو</strong> بتقنية المعالجة المحلية الخالصة (Local Execution). هذا يعني أن أي نص تقوم بكتابته أو لصقه داخل الأداة تجري معالجته داخل ذاكرة المتصفح النشطة فقط. <strong>نحن لا نقوم برفع، أو تسجيل، أو حفظ، أو الاطلاع على أي نصوص أو محادثات يُدخلها الزائر على الإطلاق</strong>.
             </p>
 
-            <h2>2. ملفات تعريف الارتباط (Cookies)</h2>
+            <h2>2. ملفات تعريف الارتباط (Cookies) والشراكات الإعلانية</h2>
             <p>
-                لا يستخدم موقع ترجمة فرانكو أي ملفات تعريف ارتباط تتبعية لجمع هويات المستخدمين. يتم حفظ إعدادات الاتجاه أو التفضيلات داخل الذاكرة المؤقتة لمتصفحك فقط إذا تطلب الأمر. قد تستخدم منصات التوزيع العالمية ملفات سجل فنية اعتيادية (Log Files) كعنوان الـ IP ونوع المتصفح للحماية من الهجمات البرمجية وتأمين وسرعة الاتصال.
-            </p>
-
-            <h2>3. شبكات الإعلانات وشركاء الطرف الثالث (Google AdSense)</h2>
-            <p>
-                قد نتعاون مستقبلاً مع شركاء موثوقين مثل شبكة Google AdSense لعرض إعلانات تساعد في استمرار تشغيل الموقع مجاناً:
+                لا يستخدم الموقع ملفات تعريف ارتباط خاصة لجمع بيانات شخصية عن هويات الزوار. وفي حال الاستعانة بشبكات إعلانية معتمدة مثل Google AdSense لدعم استمرار الخدمة مجاناً:
             </p>
             <ul>
-                <li>تستخدم شركة Google بصفتها مورداً لطرف ثالث ملفات تعريف الارتباط لخدمة الإعلانات على الموقع.</li>
-                <li>يُمكّن استخدام ملف تعريف الارتباط DART شركة Google وشركاءها من تقديم إعلانات للمستخدمين استناداً إلى زيارتهم لموقعنا أو مواقع أخرى على الإنترنت.</li>
-                <li>يمكن للمستخدمين إلغاء الاشتراك في استخدام ملف تعريف الارتباط DART من خلال زيارة <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">سياسة الخصوصية الخاصة بإعلانات Google وشبكة المحتوى</a>.</li>
+                <li>تستخدم شركة Google ملفات تعريف الارتباط لعرض الإعلانات استناداً إلى زيارات المستخدم السابقة لهذا الموقع أو لمواقع أخرى على شبكة الإنترنت.</li>
+                <li>يحق للزائر إلغاء تخصيص الإعلانات في أي وقت عبر الانتقال إلى صفحة <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">إعدادات الإعلانات من Google</a>.</li>
             </ul>
 
-            <h2 id="terms">4. شروط الاستخدام وإخلاء المسؤولية</h2>
+            <h2>3. ملفات السجل القياسية (Server Logs)</h2>
             <p>
-                تُقدم خدمة ترجمة فرانكو "كما هي" دون أي ضمانات ضمنية. نظراً لأن لغة الفرانكو تعتمد على النطق العامي والسماعي وتختلف من شخص لآخر، فإننا نبذل قصارى جهدنا لتقديم أعلى دقة ممكنة لكننا لا نتحمل أي مسؤولية ناتجة عن سوء فهم محتوى الرسائل أو الاستخدام غير السليم للنصوص المترجمة.
+                كأي موقع ويب مستضاف على منصات توزيع عالمية، قد تسجل خوادم الاستضافة تلقائياً بعض البيانات التقنية غير المحددة للهوية (مثل نوع المتصفح، نظام التشغيل، والتاريخ والوقت) لأغراض تأمين الاتصال ومكافحة الهجمات السيبرانية.
             </p>
 
-            <h2>5. الامتثال للوائح الدولية (GDPR & CCPA)</h2>
+            <h2>4. شروط الاستخدام وإخلاء المسؤولية</h2>
             <p>
-                نحن ملتزمون التزاماً كاملاً ببنود اللائحة العامة لحماية البيانات في الاتحاد الأوروبي (GDPR) وقانون خصوصية المستهلك في كاليفورنيا (CCPA). بما أننا لا نجمع بيانات شخصية أصلاً، فإن خصوصيتك محمية بحكم التصميم التقني للموقع.
-            </p>
-
-            <h2>6. التواصل معنا</h2>
-            <p>
-                إذا كانت لديك أي استفسارات أو أسئلة بخصوص سياسة الخصوصية أو شروط الاستخدام، يمكنك التواصل معنا عبر مستودع المشروع الرسمي.
+                يتم توفير خدمات الترجمة لأغراض التسهيل اللغوي والتواصلي اليومي "كما هي". ونظراً لأن لغة الفرانكو تعتمد على الاختلافات الفردية والسماعية، فإن المنصة تبذل أقصى جهد لتقديم الترجمة الأدق لكنها لا تتحمل أي مسؤولية عن أي سوء فهم ناتج عن تباين اللهجات بين المتحدثين.
             </p>
         </article>
     </main>
 
+    <!-- الفوتر النظيف والمطور بدون قوائم روابط -->
     <footer>
-        <div class="footer-wrap">
-            <div class="footer-col">
-                <h4>عن موقع ترجمة فرانكو</h4>
-                <p>موقع ترجمة فرانكو هو بوابتك المجانية الأسرع لتحويل لغة الدردشة والفرانكو إلى لغة عربية مقروءة والعكس بدقة متناهية وبدون إعلانات معطلة للتصفح.</p>
-            </div>
-            <div class="footer-col">
-                <h4>روابط سريعة</h4>
-                <ul>
-                    <li><a href="index.html">المترجم الفوري</a></li>
-                    <li><a href="about.html">من نحن</a></li>
-                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>الصفحات والاتفاقيات</h4>
-                <ul>
-                    <li><a href="index.html#rules">قواعد الفرانكو</a></li>
-                    <li><a href="about.html">فريق العمل والمنهجية</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <span>© 2026 موقع ترجمة فرانكو — جميع الحقوق محفوظة.</span>
-            <span>تصميم فائق السرعة متوافق مع معايير الويب العالمية</span>
+        <div class="footer-inner">
+            <div class="footer-brand">موقع <span>ترجمة فرانكو</span></div>
+            <div class="footer-copy">© 2026 موقع ترجمة فرانكو — جميع الحقوق محفوظة. أداة تحويل صوتي ولغوي مجانية وفائقة السرعة.</div>
         </div>
     </footer>
 
