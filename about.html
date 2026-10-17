@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>من نحن | موقع ترجمة فرانكو - رؤيتنا ومنهجيتنا</title>
-    <meta name="description" content="تعرف على فريق عمل موقع ترجمة فرانكو، رسالتنا في تسهيل التواصل الرقمي، وخوارزميات المعالجة اللغوية المتبعة لتحويل لغة الشات بدقة وأمان.">
+    <title>عن الموقع | موقع ترجمة فرانكو</title>
+    <meta name="description" content="تعرف على رؤية ومشروع موقع ترجمة فرانكو، رسالتنا في تيسير قراءة الرسائل والنصوص الرقمية بين الأجيال عبر حلول برمجية فورية وآمنة.">
     <link rel="canonical" href="https://yourusername.github.io/about.html">
     <style>
         :root {
@@ -16,16 +16,15 @@
             --text-body: #334155;
             --text-muted: #64748b;
             --radius-lg: 16px;
-            --radius-md: 10px;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Cairo", sans-serif; }
-        body { background: var(--bg-page); color: var(--text-body); line-height: 1.8; min-height: 100vh; display: flex; flex-direction: column; }
-        header { background: var(--surface); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+        body { background: var(--bg-page); color: var(--text-body); line-height: 1.85; min-height: 100vh; display: flex; flex-direction: column; }
+        header { background: var(--surface); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px); }
         .nav-wrap { max-width: 1100px; margin: 0 auto; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; }
         .brand { font-size: 1.35rem; font-weight: 800; color: var(--primary); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; }
         .brand svg { fill: var(--primary); width: 28px; height: 28px; }
         .nav-links { display: flex; gap: 1.5rem; list-style: none; }
-        .nav-links a { text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 0.95rem; }
+        .nav-links a { text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 0.95rem; transition: color 0.2s; }
         .nav-links a:hover, .nav-links a.active { color: var(--primary); }
 
         main { max-width: 900px; width: 100%; margin: 2.5rem auto; padding: 0 1.25rem; flex: 1; }
@@ -33,22 +32,17 @@
         .hero h1 { font-size: 2.2rem; color: var(--text-title); margin-bottom: 0.5rem; }
         .hero p { color: var(--text-muted); font-size: 1.1rem; }
 
-        .content-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03); }
+        .content-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2.5rem; margin-bottom: 2rem; }
         .content-box h2 { font-size: 1.5rem; color: var(--text-title); margin: 1.8rem 0 0.8rem; border-right: 4px solid var(--primary); padding-right: 0.8rem; }
-        .content-box p { margin-bottom: 1rem; font-size: 1.02rem; }
-        .content-box ul { padding-right: 1.8rem; margin-bottom: 1.2rem; }
-        .content-box li { margin-bottom: 0.5rem; }
+        .content-box p { margin-bottom: 1.2rem; font-size: 1.02rem; text-align: justify; }
+        .content-box ul { padding-right: 1.8rem; margin-bottom: 1.4rem; }
+        .content-box li { margin-bottom: 0.6rem; }
 
-        footer { background: var(--surface); border-top: 1px solid var(--border); padding: 2.5rem 1.5rem 1.5rem; margin-top: auto; }
-        .footer-wrap { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 2rem; margin-bottom: 1.5rem; }
-        @media (max-width: 768px) { .footer-wrap { grid-template-columns: 1fr; } }
-        .footer-col h4 { font-size: 1.1rem; color: var(--text-title); margin-bottom: 0.8rem; }
-        .footer-col p { color: var(--text-muted); font-size: 0.9rem; }
-        .footer-col ul { list-style: none; }
-        .footer-col li { margin-bottom: 0.5rem; }
-        .footer-col a { text-decoration: none; color: var(--text-muted); font-size: 0.9rem; }
-        .footer-col a:hover { color: var(--primary); }
-        .footer-bottom { max-width: 1100px; margin: 0 auto; padding-top: 1.5rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.85rem; flex-wrap: wrap; }
+        footer { background: var(--surface); border-top: 1px solid var(--border); padding: 2rem 1.5rem; margin-top: auto; }
+        .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .footer-brand { font-size: 1.1rem; font-weight: 700; color: var(--text-title); }
+        .footer-brand span { color: var(--primary); }
+        .footer-copy { color: var(--text-muted); font-size: 0.88rem; }
     </style>
 </head>
 <body>
@@ -61,71 +55,46 @@
             </a>
             <ul class="nav-links">
                 <li><a href="index.html">المترجم الفوري</a></li>
-                <li><a href="about.html" class="active">من نحن</a></li>
-                <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                <li><a href="about.html" class="active">عن الموقع</a></li>
+                <li><a href="privacy.html">الخصوصية</a></li>
             </ul>
         </div>
     </header>
 
     <main>
         <div class="hero">
-            <h1>من نحن - موقع ترجمة فرانكو</h1>
-            <p>مشروع لغوي تقني مستقل يهدف إلى سد الفجوة الرقمية وتيسير التواصل اليومي بين الأجيال.</p>
+            <h1>عن موقع ترجمة فرانكو</h1>
+            <p>مبادرة لغوية تقنية مستقلة تهدف إلى تعزيز سهولة الفهم والتواصل الرقمي في العالم العربي.</p>
         </div>
 
         <article class="content-box">
-            <h2>قصة تأسيس المنصة</h2>
+            <h2>رؤيتنا اللغوية والتقنية</h2>
             <p>
-                انطلق <strong>موقع ترجمة فرانكو</strong> نتيجة ملاحظة الفجوة المتزايدة في قراءة وفهم النصوص المكتوبة بلغة الفرانكو (العربيزي). فبينما يفضل ملايين الشباب واليافعين في العالم العربي الكتابة السريعة بالحروف اللاتينية والأرقام على تطبيقات الشات (مثل واتساب وتيليجرام وإنستغرام)، يجد الكثير من أولياء الأمور، المعلمين، وأصحاب الأعمال صعوبة بالغة في فك رموز هذه الرسائل وفهم فحواها بدقة.
+                تم تأسيس <strong>موقع ترجمة فرانكو</strong> لمعالجة إشكالية لغوية يومية يواجهها ملايين المستخدمين في العالم العربي. مع هيمنة وسائل التواصل وتطبيقات المراسلة مثل واتساب، ماسنجر، وتيليجرام، أصبحت لغة الفرانكو (العربيزي) الخيار الأول للكتابة السريعة لدى جيل الشباب، في حين يجد الكثير من الآباء والمعلمين وأصحاب الأعمال والباحثين مشقة بالغة في قراءة هذه الرسائل وفهم مغزاها الدقيق.
             </p>
 
-            <h2>رسالتنا وأهدافنا</h2>
+            <h2>فلسفة المعالجة الآمنة والخفيفة</h2>
             <p>
-                نهدف إلى توفير أدوات ويب نظيفة، مجانية، وفائقة السرعة تساعد أي مستخدم على تحويل نصوص الفرانكو إلى لغة عربية سليمة ومقروءة بضغطة زر واحدة، دون إثقال كاهل الزائر بإعلانات منبثقة أو روابط وهمية.
-            </p>
-
-            <h2>المنهجية اللغوية والتقنية (E-E-A-T)</h2>
-            <p>
-                لضمان أعلى معايير الجودة والحيادية اللغوية، تتبع منصتنا القواعد التالية:
+                نؤمن بأن أدوات الويب الحديثة يجب أن تجمع بين البساطة الفائقة والأمان المطلق. لذلك صُممت منصتنا بالكامل لتعمل وفق القواعد التالية:
             </p>
             <ul>
-                <li><strong>الفرز الصوتي المركب:</strong> معالجة التراكيب الثنائية (Diphthongs) قبل الحروف الفردية، لمنع الأخطاء الشائعة مثل الخلط بين (sh و s) أو بين (kh و k).</li>
-                <li><strong>تغطية اللهجات العربية المتعددة:</strong> مراعاة خصوصية اللهجة المصرية (كاستخدام 2 للقاف والهمزة)، واللهجة الخليجية والشامية (كاستخدام 8 للقاف و g للجيم غير المعطشة).</li>
-                <li><strong>الخصوصية المحلية المطلقة:</strong> لا يتم حفظ نصوص المستخدمين على أي خادم، فكل العمليات تتم محلياً 100% داخل المتصفح.</li>
+                <li><strong>معالجة من طرف العميل (Client-Side Computing):</strong> تجري عمليات التحويل اللغوي واستبدال الأصوات محلياً داخل متصفح الإنترنت دون إرسال النصوص إلى خوادم خارجية، مما يضمن أقصى معايير السرية للمستخدمين.</li>
+                <li><strong>سرعة استجابة فورية (Zero-Latency):</strong> لا تتطلب الأداة النقر على أزرار انتظار، بل تظهر الترجمة في أجزاء من الثانية مع كل حرف يتم كتابته.</li>
+                <li><strong>الدقة الصوتية المتقدمة:</strong> مراعاة خصوصيات النطق في اللهجات العربية الحية (المصرية، الشامية، الخليجية، والمغاربية) وتراكيب الحروف المزدوجة مثل kh و sh و gh.</li>
             </ul>
 
-            <h2>فريق التطوير والاتصال</h2>
+            <h2>التزامنا بمعايير جودة المحتوى (E-E-A-T)</h2>
             <p>
-                يقوم على تطوير الموقع فريق مستقل من المهتمين بمجال المعالجة الآلية للغات الطبيعية (NLP) وتطوير واجهات الويب الحديثة. نسعد دائماً باستقبال اقتراحاتكم وملاحظاتكم لتطوير القواميس والقواعد الصوتية من خلال مشاركتنا على مستودع المشروع.
+                يحرص فريق تطوير المنصة على مراجعة القواميس الصوتية بشكل دوري لمواكبة المصطلحات والرموز الجديدة التي يبتكرها رواد منصات الدردشة، لضمان استمرار تقديم خدمة موثوقة ومجانية تلبي تطلعات الزوار في كافة الدول العربية.
             </p>
         </article>
     </main>
 
+    <!-- الفوتر النظيف والمطور بدون قوائم روابط -->
     <footer>
-        <div class="footer-wrap">
-            <div class="footer-col">
-                <h4>عن موقع ترجمة فرانكو</h4>
-                <p>موقع ترجمة فرانكو هو بوابتك المجانية الأسرع لتحويل لغة الدردشة والفرانكو إلى لغة عربية مقروءة والعكس بدقة متناهية وبدون إعلانات معطلة للتصفح.</p>
-            </div>
-            <div class="footer-col">
-                <h4>روابط سريعة</h4>
-                <ul>
-                    <li><a href="index.html">المترجم الفوري</a></li>
-                    <li><a href="about.html">من نحن</a></li>
-                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>المشروع</h4>
-                <ul>
-                    <li><a href="index.html#rules">قواعد الفرانكو</a></li>
-                    <li><a href="privacy.html">شروط الاستخدام</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <span>© 2026 موقع ترجمة فرانكو — جميع الحقوق محفوظة.</span>
-            <span>تصميم فائق السرعة متوافق مع معايير الويب العالمية</span>
+        <div class="footer-inner">
+            <div class="footer-brand">موقع <span>ترجمة فرانكو</span></div>
+            <div class="footer-copy">© 2026 موقع ترجمة فرانكو — جميع الحقوق محفوظة. أداة تحويل صوتي ولغوي مجانية وفائقة السرعة.</div>
         </div>
     </footer>
 
